@@ -4,8 +4,6 @@ import main.entities.WeightConverter;
 
 /**
  * The WeightConverterImpl class provides an implementation of the Converter interface.
- * It uses the WeightConverter entity to convert weight units between kilograms, grams, and pounds.
- * This class abstracts the process of determining the original unit of the provided value.
  */
 public class WeightConverterImpl implements Converter {
     private WeightConverter weightConverter = new WeightConverter();

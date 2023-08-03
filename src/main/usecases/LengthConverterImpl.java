@@ -4,9 +4,7 @@ import main.entities.LengthConverter;
 
 /**
  * The LengthConverterImpl class provides an implementation of the Converter interface.
- * It uses the LengthConverter entity to convert length units between meters, centimeters, kilometers, and feet.
- * This class abstracts the process of determining the original unit of the provided value.
- */
+*/
 public class LengthConverterImpl implements Converter {
     private LengthConverter lengthConverter = new LengthConverter();
 

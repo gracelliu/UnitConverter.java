@@ -5,8 +5,6 @@ import javax.swing.*;
 
 /**
  * The ViewModel class represents a ViewModel in the Model-View-ViewModel (MVVM) pattern.
- * It associates a JPanel (representing a view) with a Converter (representing a model).
- * This ViewModel class can be used to manage and manipulate data for a view.
  */
 public class ViewModel {
     private JPanel panel;
@@ -24,5 +22,4 @@ public class ViewModel {
     public Converter getConverter() {
         return converter;
     }
-
 }

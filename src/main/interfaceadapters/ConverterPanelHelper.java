@@ -5,15 +5,6 @@ import java.awt.*;
 /** This class provides a helper method to layout UI components in a JPanel. */
 public class ConverterPanelHelper {
 
-    /**
-     * Layout UI components in a JPanel.
-     * @param panel The JPanel to layout UI components in.
-     * @param inputField The JTextField to layout.
-     * @param fromUnitComboBox The JComboBox to layout.
-     * @param toUnitComboBox The JComboBox to layout.
-     * @param convertButton The JButton to layout.
-     * @param resultLabel The JLabel to layout.
-     */
     public static void layoutComponents(JPanel panel, JTextField inputField, JComboBox<String> fromUnitComboBox,
                                         JComboBox<String> toUnitComboBox, JButton convertButton, JLabel resultLabel) {
         // Set high contrast color scheme
@@ -26,7 +17,6 @@ public class ConverterPanelHelper {
         convertButton.setBackground(Color.PINK);
         resultLabel.setBackground(Color.PINK);
 
-        // Set all text (foreground) colors to black
         panel.setBackground(backgroundColor);
         inputField.setForeground(foregroundColor);
         fromUnitComboBox.setForeground(foregroundColor);

@@ -4,8 +4,6 @@ import main.entities.TimeConverter;
 
 /**
  * The TimeConverterImpl class provides an implementation of the Converter interface.
- * It uses the TimeConverter entity to convert time units between seconds, minutes, hours, days, and years.
- * This class abstracts the process of determining the original unit of the provided value.
  */
 public class TimeConverterImpl implements Converter {
     private TimeConverter timeConverter = new TimeConverter();
