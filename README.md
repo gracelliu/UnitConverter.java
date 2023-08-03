@@ -16,8 +16,9 @@ As a user who frequently deals with various units of time, length, and weight, I
 </br> 
 
 ## Design Patterns
-The program follows the principles of Clean Architecture, with four distinct layers: Entities, Use Cases, Interface Adapters, and Framework & Drivers. It uses the Factory Method design pattern to create instances of converter classes based on user input, promoting modularity and extensibility.
+Factory Method Pattern: The GUI panels for different unit converters (TimeConverterPanel, LengthConverterPanel, and WeightConverterPanel) use the Factory Method Pattern to create the converter instances. This pattern decouples the GUI components from the concrete converter classes, promoting extensibility.
 
+Observer Pattern: The GUI components are event-driven, and the Observer Pattern is used to handle user interactions. When the "Convert" button is clicked, the corresponding converter panel acts as the subject, and the main application acts as the observer to receive and process the conversion results.
 </br> 
 
 ## Version of Java and Testing Framework
