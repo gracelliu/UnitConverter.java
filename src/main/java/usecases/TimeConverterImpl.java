@@ -1,6 +1,6 @@
-package main.usecases;
+package main.java.usecases;
 
-import main.entities.TimeConverter;
+import main.java.entities.TimeConverter;
 
 /**
  * The TimeConverterImpl class provides an implementation of the Converter interface.

@@ -1,6 +1,6 @@
-package main.interfaceadapters;
+package main.java.interfaceadapters;
 
-import main.usecases.Converter;
+import main.java.usecases.Converter;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,6 +1,6 @@
-package main.usecases;
+package main.java.usecases;
 
-import main.entities.LengthConverter;
+import main.java.entities.LengthConverter;
 
 /**
  * The LengthConverterImpl class provides an implementation of the Converter interface.

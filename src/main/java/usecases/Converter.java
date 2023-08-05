@@ -1,4 +1,4 @@
-package main.usecases;
+package main.java.usecases;
 
 /**
  * The Converter interface provides a contract for converting values between different units.

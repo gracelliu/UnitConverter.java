@@ -1,6 +1,6 @@
-package test;
+package test.java;
 
-import main.entities.TimeConverter;
+import main.java.entities.TimeConverter;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

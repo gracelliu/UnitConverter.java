@@ -1,6 +1,6 @@
-package main.usecases;
+package main.java.usecases;
 
-import main.entities.WeightConverter;
+import main.java.entities.WeightConverter;
 
 /**
  * The WeightConverterImpl class provides an implementation of the Converter interface.

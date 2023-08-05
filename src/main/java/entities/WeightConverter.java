@@ -1,4 +1,4 @@
-package main.entities;
+package main.java.entities;
 
 /**
  * The WeightConverter class provides methods for converting weight between different units.

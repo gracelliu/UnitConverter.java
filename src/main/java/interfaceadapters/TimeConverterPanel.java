@@ -1,32 +1,32 @@
-package main.interfaceadapters;
+package main.java.interfaceadapters;
 
-import main.usecases.Converter;
+import main.java.usecases.Converter;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * A JPanel that contains UI components for converting weight units
+ * A JPanel that contains UI components for converting time units
  */
-public class WeightConverterPanel extends JPanel {
+public class TimeConverterPanel extends JPanel {
     private JTextField inputField;
     private JComboBox<String> fromUnitComboBox;
     private JComboBox<String> toUnitComboBox;
     private JLabel resultLabel;
     private JButton convertButton;
-    private Converter weightConverter;
+    private Converter timeConverter;
 
     /**
-     * Create a new WeightConverterPanel
-     * @param weightConverter The Converter to use for converting weight units
+     * Create a new TimeConverterPanel
+     * @param timeConverter The Converter to use for converting time units
      */
-    public WeightConverterPanel(Converter weightConverter) {
-        this.weightConverter = weightConverter;
+    public TimeConverterPanel(Converter timeConverter) {
+        this.timeConverter = timeConverter;
 
         // Initialize UI components
         inputField = new JTextField(10);
-        fromUnitComboBox = new JComboBox<>(new String[]{"Kilograms", "Grams", "Pounds"});
-        toUnitComboBox = new JComboBox<>(new String[]{"Kilograms", "Grams", "Pounds"});
+        fromUnitComboBox = new JComboBox<>(new String[]{"Seconds", "Minutes", "Hours", "Days", "Years"});
+        toUnitComboBox = new JComboBox<>(new String[]{"Seconds", "Minutes", "Hours", "Days", "Years"});
         resultLabel = new JLabel("Result will be shown here");
         convertButton = new JButton("Convert");
 
@@ -38,22 +38,22 @@ public class WeightConverterPanel extends JPanel {
         convertButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                convertUnits(weightConverter);
+                convertUnits(timeConverter);
             }
         });
     }
 
     /**
      * Convert the input value from the fromUnit to the toUnit and display the result in the resultLabel.
-     * @param converter The Converter to use for converting weight units
+     * @param converter The Converter to use for converting time units
      */
-    private void convertUnits(Converter converter) {
+    public void convertUnits(Converter converter) {
         try {
             double inputValue = Double.parseDouble(inputField.getText());
             String fromUnit = fromUnitComboBox.getSelectedItem().toString();
             String toUnit = toUnitComboBox.getSelectedItem().toString();
 
-            double result = weightConverter.convert(inputValue, fromUnit, toUnit);
+            double result = timeConverter.convert(inputValue, fromUnit, toUnit);
 
             resultLabel.setText(inputValue + " " + fromUnit + " = " + result + " " + toUnit);
         } catch (NumberFormatException ex) {

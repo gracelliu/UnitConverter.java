@@ -1,7 +1,7 @@
-package main.frameworkdrivers;
+package main.java.frameworkdrivers;
 
-import main.interfaceadapters.*;
-import main.usecases.*;
+import main.java.interfaceadapters.*;
+import main.java.usecases.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

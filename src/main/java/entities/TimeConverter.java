@@ -1,4 +1,4 @@
-package main.entities;
+package main.java.entities;
 
 /** The TimeConverter class provides methods for converting time between different units. */
 public class TimeConverter {

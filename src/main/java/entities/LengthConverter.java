@@ -1,4 +1,4 @@
-package main.entities;
+package main.java.entities;
 
 /**
  * The LengthConverter class provides methods to convert lengths between different units.
